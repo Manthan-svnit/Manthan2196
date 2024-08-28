@@ -1,0 +1,20 @@
+#include<stdio.h>
+ int main()
+{
+	int p,c,m,e,i,sum;
+	printf("marks obtain in physics:\n");
+	scanf("%d",&p);
+	printf("marks obtain in chemistry:\n");
+	scanf("%d",&c);
+	printf("marks obtain in maths:\n");
+	scanf("%d",&m);
+	printf("marks obtain in english:\n");
+	scanf("%d",&e);
+	printf("marks obtain in computer:\n");
+	scanf("%d",&i);
+	sum=p+c+m+e+i;
+	printf("sum of total marks is:%d\n",sum);
+	float per;
+	per= sum/5;
+	printf("percentage of student is:%f",per);
+}
