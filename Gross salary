@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+	int a,b,c;
+	printf("enter your basic salary:\n");
+	scanf("%d",&a);
+	printf("enter your HRA:\n");
+	scanf("%d",&b);
+	printf("enter your other allownances:\n");
+	scanf("%d",&c);
+	int sum;
+	sum=a+b+c;
+	printf("your gross salary is %d",sum);
+}
