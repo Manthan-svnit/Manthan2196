@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	double sec,min,hour;
+	sec=31558150;
+	min=sec/60;
+	hour=min/60;
+	printf("Earth takes a period of revolution of %lf",min);
+	printf("Earth takes a period of revolution of %lf",hour);
+}
