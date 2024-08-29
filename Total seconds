@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int d,h,m,s;
+	printf("Enter days hours minutes seconds");
+	scanf("%d""%d""%d",&d,&h,&m,&s);
+	int ds,ms,hs,sec;
+	ds=d*24*60*60;
+	hs=h*60*60;
+	ms=m*60;
+	sec=s;
+	int tot=ds+ms+hs+sec;
+	printf("Total seconds is %d",tot);
+}
