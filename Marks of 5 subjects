@@ -2,15 +2,15 @@
  int main()
 {
 	int p,c,m,e,i,sum;
-	printf("marks obtain in physics:\n");
+	printf("marks obtain in physics out of 100:\n");
 	scanf("%d",&p);
-	printf("marks obtain in chemistry:\n");
+	printf("marks obtain in chemistry out of 100:\n");
 	scanf("%d",&c);
-	printf("marks obtain in maths:\n");
+	printf("marks obtain in maths out of 100:\n");
 	scanf("%d",&m);
-	printf("marks obtain in english:\n");
+	printf("marks obtain in english out of 100:\n");
 	scanf("%d",&e);
-	printf("marks obtain in computer:\n");
+	printf("marks obtain in computer out of 100:\n");
 	scanf("%d",&i);
 	sum=p+c+m+e+i;
 	printf("sum of total marks is:%d\n",sum);
