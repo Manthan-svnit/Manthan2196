@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+	int p,c,m,e,i;
+	printf("Enter marks obtained in physics,chemistry,maths,english,computer\n");
+	scanf("%d""%d""%d""%d""%d",&p,&c,&m,&e,&i);
+	int sum;
+	double per;
+	sum=p+c+m+e+i;
+	per=sum/5;
+	if(per>90)
+	{
+		printf("You secure grade A");
+	}
+	else if(80<per<90)
+	{
+		printf("You secure grade B");
+	}
+	else if(70<per<80)
+	{
+		printf("You secured grade C");
+	}
+	else if(60<per<70)
+	{
+		printf("You secured grade D");
+	}
+}
