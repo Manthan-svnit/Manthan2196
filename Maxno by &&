@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,max;
+    printf("Write three Numbers:/n");
+    scanf("%d%d%d",&a,&b,&c);
+    if((a>b)&&(a>c))
+    {
+       max=a;
+    }
+    else if((b>c)&&(b>a))
+    {
+        max=b;
+    }
+    else if((c>b)&&(c>a))
+    {
+        max=c;
+    }
+    printf("Maximum Number Among all three numbers is %d",max);
+}
