@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int p,c,m,e,sum;
+    float cm;
+    p=c=m=200;
+    sum=p+c+m+e;
+    e=100;
+    cm=m/2+p/2+c/2+e;
+    printf("Cutoff marks of the student is %f out of %d",cm,sum);
+
+}
