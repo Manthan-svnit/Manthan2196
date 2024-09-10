@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    char operation;
+
+    // Read two numbers
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Read the operation to perform
+    printf("Enter the operation (+, -, *, /): ");
+    scanf(" %c", &operation);  // Note the space before %c to consume any leftover newline character
+
+    // Perform the operation based on the character input
+    switch(operation) {
+        case '+':
+            printf("Result: %d\n", num1 + num2);
+            break;
+        case '-':
+            printf("Result: %d\n", num1 - num2);
+            break;
+        case '*':
+            printf("Result: %d\n", num1 * num2);
+            break;
+        case '/':
+            // Check for division by zero
+            if (num2 != 0) {
+                printf("Result: %d\n", num1 / num2);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        default:
+            printf("Error: Invalid operation.\n");
+            break;
+    }
+
+    return 0;
+}
