@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    int sum = 0;
+
+    // Continuously read numbers until a negative number is entered
+    while (1) {
+        printf("Enter a number (negative to stop): ");
+        scanf("%d", &num);
+
+        // If the number is negative, break the loop
+        if (num < 0) {
+            break;
+        }
+
+        // Add the number to the sum
+        sum += num;
+    }
+
+    // Print the total sum
+    printf("The sum of the numbers is: %d\n", sum);
+
+    return 0;
+}
