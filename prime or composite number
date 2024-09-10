@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int N, i, isPrime = 1;
+
+    // Read the number from user
+    printf("Enter a number: ");
+    scanf("%d", &N);
+
+    // 0 and 1 are neither prime nor composite
+    if (N <= 1) {
+        printf("%d is neither prime nor composite.\n", N);
+        return 0;
+    }
+
+    // Check for factors from 2 to N/2
+    for (i = 2; i <= N / 2; i++) {
+        if (N % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+
+    // Output result based on the isPrime flag
+    if (isPrime)
+        printf("%d is a prime number.\n", N);
+    else
+        printf("%d is a composite number.\n", N);
+
+    return 0;
+}
