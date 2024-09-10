@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, num;
+    int max = -2147483648, secondMax = -2147483648;  // Initializing with minimum possible integer
+
+    // Input the total number of elements
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    if (n < 2) {
+        printf("There should be at least 2 numbers.\n");
+        return 1;  // Exit the program if there are fewer than 2 numbers
+    }
+
+    // Input numbers and find max and second max
+    for (i = 0; i < n; i++) {
+        printf("Enter number %d: ", i + 1);
+        scanf("%d", &num);
+
+        if (num > max) {
+            secondMax = max;  // Update second max
+            max = num;        // Update max
+        } else if (num > secondMax && num != max) {
+            secondMax = num;  // Update second max if the current number is less than max but greater than second max
+        }
+    }
+
+    // Output the results
+    if (secondMax == -2147483648) {
+        printf("There is no second maximum number.\n");
+    } else {
+        printf("Maximum number: %d\n", max);
+        printf("Second maximum number: %d\n", secondMax);
+    }
+
+    return 0;
+}
