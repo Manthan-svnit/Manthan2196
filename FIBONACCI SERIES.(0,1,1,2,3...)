@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int first = 0, second = 1, next;
+
+    // Input the number of terms
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    // Print the Fibonacci series
+    printf("Fibonacci series: ");
+
+    for (i = 0; i < n; i++) {
+        if (i == 0) {
+            printf("%d ", first);  // Print the first number
+            continue;
+        }
+        if (i == 1) {
+            printf("%d ", second); // Print the second number
+            continue;
+        }
+        next = first + second;  // Calculate the next term
+        first = second;         // Update the first term
+        second = next;          // Update the second term
+        printf("%d ", next);    // Print the next term
+    }
+
+    printf("\n");
+    return 0;
+}
