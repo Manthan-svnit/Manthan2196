@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int N, i, isPrime = 1;
 
    
@@ -14,7 +15,8 @@ int main() {
 
     for (i = 2; i <= N / 2; i++) 
        {
-        if (N % i == 0) {
+        if (N % i == 0)
+       {
             isPrime = 0;
             break;
         }
